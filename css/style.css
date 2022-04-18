@@ -1,0 +1,75 @@
+#title {
+	margin-top: 1em;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+}
+
+#slogan1 {
+	text-align: center;
+	font-size: 1em;
+	color: white;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+#card {
+	margin: 0 auto;
+	width: 28em;
+	background-color: white;
+	border-radius: 1em;
+	padding-bottom: 0.8em;
+}
+
+#slogan2bg {
+	background-color: #D4ECE1;
+	border-radius: 1em 1em 0 0;
+	height: 1.25em;
+}
+
+#slogan2 {
+	margin: -1.2em auto;
+	background-color: #D4ECE1;
+	height: 2.4em;
+	width: 16em;
+	border-radius: 1.2em;
+	text-align: center;
+	line-height: 2.4em;
+	font-size: 1em;
+	color: #2BA667;
+}
+
+#welcome {
+	margin-top: 2.2em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#updatetime {
+	margin-top: 1em;
+	text-align: center;
+	font-size: 1em;
+	color: #888888;
+}
+
+#arrow {
+	width: 14em;
+	display: block;
+	margin: 1.5em auto;
+}
+
+#hr {
+	width: 25em;
+}
+
+#p {
+	margin-top: 0.8em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	font-size: 1em;
+}
+
+#p>span {
+	color: #888888;
+}
