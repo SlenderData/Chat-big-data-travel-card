@@ -1,3 +1,4 @@
+// 实现自动获取并更新当前时间
 function disptime() {
 	var time = new Date();
 	var year = time.getFullYear();
