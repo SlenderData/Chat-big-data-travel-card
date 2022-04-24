@@ -16,10 +16,11 @@
 
 #card {
 	margin: 0 auto;
-	width: 28em;
+	width: 24em;
 	background-color: white;
 	border-radius: 1em;
 	padding-bottom: 0.8em;
+	box-shadow: 0 0 0.5em #154F31;
 }
 
 #slogan2bg {
@@ -32,7 +33,7 @@
 	margin: -1.2em auto;
 	background-color: #D4ECE1;
 	height: 2.4em;
-	width: 16em;
+	width: 14em;
 	border-radius: 1.2em;
 	text-align: center;
 	line-height: 2.4em;
@@ -53,14 +54,27 @@
 	color: #888888;
 }
 
+@keyframes scaleArrow {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.85);
+	}
+}
+
 #arrow {
-	width: 14em;
+	width: 12em;
 	display: block;
 	margin: 1.5em auto;
+	-webkit-animation-name: scaleArrow;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 1.5s;
 }
 
 #hr {
-	width: 25em;
+	width: 21em;
 }
 
 #p {
