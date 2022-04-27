@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>聊天大数据行程卡</title>
+	</head>
+	<style type="text/css">
+		#title {
+			margin-top: 1em;
+			text-align: center;
+			font-size: 2em;
+			font-weight: bold;
+			color: white;
+		}
+
+		#slogan1 {
+			text-align: center;
+			font-size: 1em;
+			color: white;
+			margin-top: 1em;
+			margin-bottom: 1.5em;
+		}
+
+		#card {
+			margin: 0 auto;
+			width: 24em;
+			background-color: white;
+			border-radius: 1em;
+			padding-bottom: 0.8em;
+			box-shadow: 0 0 0.5em #154F31;
+		}
+
+		#slogan2bg {
+			background-color: #D4ECE1;
+			border-radius: 1em 1em 0 0;
+			height: 1.25em;
+		}
+
+		#slogan2 {
+			margin: -1.2em auto;
+			background-color: #D4ECE1;
+			height: 2.4em;
+			width: 14em;
+			border-radius: 1.2em;
+			text-align: center;
+			line-height: 2.4em;
+			font-size: 1em;
+			color: #2BA667;
+		}
+
+		#welcome {
+			margin-top: 2.2em;
+			text-align: center;
+			font-size: 1.2em;
+		}
+
+		#updatetime {
+			margin-top: 1em;
+			text-align: center;
+			font-size: 1em;
+			color: #888888;
+		}
+
+		@keyframes scaleArrow {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(0.85);
+			}
+		}
+
+		#arrow {
+			width: 12em;
+			display: block;
+			margin: 1.5em auto;
+			-webkit-animation-name: scaleArrow;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-duration: 1.5s;
+		}
+
+		#hr {
+			width: 21em;
+		}
+
+		#p {
+			margin-top: 0.8em;
+			margin-left: 1.5em;
+			margin-right: 1.5em;
+			font-size: 1em;
+		}
+
+		#p>span {
+			color: #888888;
+		}
+	</style>
+	<body bgcolor="#2BA667">
+		<div id="title">
+			聊天大数据行程卡
+		</div>
+		<div id="slogan1">
+			舆情防控，人人有责
+		</div>
+		<div id="card">
+			<div id="slogan2bg"></div>
+			<div id="slogan2">
+				请收下绿色聊天行程卡
+			</div>
+			<div id="welcome">
+				170****0000的动态行程卡
+			</div>
+			<div id="updatetime"></div>
+			<svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+				<defs>
+					<style>
+						.cls-1 {
+							fill: #2ba667;
+						}
+					</style>
+				</defs>
+				<g>
+					<path class="cls-1"
+						d="M200,32A168,168,0,0,1,318.79,318.79,168,168,0,1,1,81.21,81.21,166.9,166.9,0,0,1,200,32m0-32C89.54,0,0,89.54,0,200S89.54,400,200,400s200-89.54,200-200S310.46,0,200,0Z" />
+				</g>
+				<g>
+					<path class="cls-1"
+						d="M197.77,54.42,80.71,171.48a3.15,3.15,0,0,0-.92,2.23v44.83a3.15,3.15,0,0,0,5.37,2.23l21.5-21.5,67.72-67.71a3.14,3.14,0,0,1,5.37,2.22V343.85A3.15,3.15,0,0,0,182.9,347h31.7a3.15,3.15,0,0,0,3.15-3.15V131.28a3.14,3.14,0,0,1,5.37-2.22l70.22,70.21,21.5,21.5a3.15,3.15,0,0,0,5.37-2.23V173.71a3.15,3.15,0,0,0-.92-2.23L202.23,54.42A3.16,3.16,0,0,0,197.77,54.42Z" />
+				</g>
+			</svg>
+			<hr id="hr" color="#DDDDDD" />
+			<p id="p">
+				<span>您于前14天内参与讨论过：</span>
+				鑫葡亰娛楽珹~㿟螞會所⑧*<br />
+				（注：*表示当前该群聊中存在中风险或高风险言论，并不表示用户实际赞成这些中高风险言论。）
+			</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		// 实现自动获取并更新当前时间
+		function disptime() {
+			var time = new Date();
+			var year = time.getFullYear();
+			var month = time.getMonth() + 1;
+			var day = time.getDate();
+			var hh = time.getHours();
+			var mm = time.getMinutes();
+			var ss = time.getSeconds();
+			if (day < 10) {
+				day = "0" + day;
+			}
+			if (month < 10) {
+				month = "0" + month;
+			}
+			if (hh < 10) {
+				hh = "0" + hh;
+			}
+			if (mm < 10) {
+				mm = "0" + mm;
+			}
+			if (ss < 10) {
+				ss = "0" + ss;
+			}
+			document.getElementById("updatetime").innerHTML = "更新于：" + year + "." + month + "." + day + "&nbsp;&nbsp;" + hh +
+				":" + mm + ":" + ss;
+		}
+		disptime();
+		let timeId = 0;
+
+		function start() {
+			timeId = setInterval("disptime()", 1000);
+		}
+		start();
+	</script>
+</html>
