@@ -1,4 +1,4 @@
-# 🏄 ChatBigDataTravelCard
+# 🏄 Chat-big-data-travel-card
 
 特别感谢 [@·Gone·](https://weibo.com/u/2881197961) 老师，本项目灵感来源于 [~~这篇微博(有关微博已被屏蔽)~~](https://weibo.com/2881197961/LkEoLyCnP) [【备份】](weibo_backups/weibo_backups.md) 。
 
