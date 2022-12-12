@@ -1,3 +1,5 @@
+### 又见证了一个关键的历史节点，「通信行程卡」将于 2022 年 12 月 13 日 正式下线 🎉
+
 # 🏄 Chat-big-data-travel-card
 
 感谢 [@·Gone·](https://weibo.com/u/2881197961) 老师，本项目灵感来源于 [~~这篇微博(有关微博已被屏蔽)~~](https://weibo.com/2881197961/LkEoLyCnP) [【备份】](weibo_backups/weibo_backups.md) 。
